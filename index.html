@@ -175,7 +175,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-10-05 23:18:50" itemprop="dateModified" datetime="2020-10-05T23:18:50+08:00">2020-10-05</time>
+                <time title="修改时间：2020-10-05 23:37:56" itemprop="dateModified" datetime="2020-10-05T23:37:56+08:00">2020-10-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -389,7 +389,97 @@
 <td align="left">memoryview</td>
 </tr>
 </tbody></table>
+<p><strong>设置特定数据类型，可以自己使用构造函数</strong></p>
+<table>
+<thead>
+<tr>
+<th align="left">示例</th>
+<th align="left">数据类型</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">x = str(“Hello World”)</td>
+<td align="left">str</td>
+</tr>
+<tr>
+<td align="left">x = int(29)</td>
+<td align="left">int</td>
+</tr>
+<tr>
+<td align="left">x = float(29.5)</td>
+<td align="left">float</td>
+</tr>
+<tr>
+<td align="left">x = complex(1j)</td>
+<td align="left">complex</td>
+</tr>
+<tr>
+<td align="left">x = list((“apple”, “banana”, “cherry”))</td>
+<td align="left">list</td>
+</tr>
+<tr>
+<td align="left">x = tuple((“apple”, “banana”, “cherry”))</td>
+<td align="left">tuple</td>
+</tr>
+<tr>
+<td align="left">x = range(6)</td>
+<td align="left">range</td>
+</tr>
+<tr>
+<td align="left">x = dict(name=”Bill”, age=36)</td>
+<td align="left">dict</td>
+</tr>
+<tr>
+<td align="left">x = set((“apple”, “banana”, “cherry”))</td>
+<td align="left">set</td>
+</tr>
+<tr>
+<td align="left">x = frozenset((“apple”, “banana”, “cherry”))</td>
+<td align="left">frozenset</td>
+</tr>
+<tr>
+<td align="left">x = bool(5)</td>
+<td align="left">bool</td>
+</tr>
+<tr>
+<td align="left">x = bytes(5)</td>
+<td align="left">bytes</td>
+</tr>
+<tr>
+<td align="left">x = bytearray(5)</td>
+<td align="left">bytearray</td>
+</tr>
+<tr>
+<td align="left">x = memoryview(bytes(5))</td>
+<td align="left">memoryview</td>
+</tr>
+</tbody></table>
+<p><strong>将变量指定类型</strong>-Python Casting</p>
+<ul>
+<li>int() - 用整数字面量、浮点字面量构造整数（通过对数进行下舍入），或者用表示完整数字的字符串字面量</li>
+<li>float() - 用整数字面量、浮点字面量，或字符串字面量构造浮点数（提供表示浮点数或整数的字符串）</li>
+<li>str() - 用各种数据类型构造字符串，包括字符串，整数字面量和浮点字面量</li>
+</ul>
+<h1 id="python的数字表示"><a href="#python的数字表示" class="headerlink" title="python的数字表示"></a>python的数字表示</h1><ul>
+<li>int 整数</li>
+<li>float 小数 也可以是带有“e”的科学数字，表示 10 的幂</li>
+<li>complex 复数</li>
+<li>random 随机数 </li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; 10    # int</span><br><span class="line">y &#x3D; 6.3  # float</span><br><span class="line">z &#x3D; 2j   # complex</span><br></pre></td></tr></table></figure>
 
+<p>浮点数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; 27e4</span><br><span class="line">y &#x3D; 15E2</span><br><span class="line">z &#x3D; -49.8e100</span><br></pre></td></tr></table></figure>
+
+<p>复数 j为复数的虚部</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; 2+3j</span><br><span class="line">y &#x3D; 7j</span><br><span class="line">z &#x3D; -7j</span><br></pre></td></tr></table></figure>
+
+<h2 id="数字类型转换"><a href="#数字类型转换" class="headerlink" title="数字类型转换"></a>数字类型转换</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">x &#x3D; 10 # int</span><br><span class="line">y &#x3D; 6.3 # float</span><br><span class="line">z &#x3D; 1j # complex</span><br><span class="line"></span><br><span class="line"># 把整数转换为浮点数</span><br><span class="line"></span><br><span class="line">a &#x3D; float(x)</span><br><span class="line"></span><br><span class="line"># 把浮点数转换为整数</span><br><span class="line"></span><br><span class="line">b &#x3D; int(y)</span><br><span class="line"></span><br><span class="line"># 把整数转换为复数：</span><br><span class="line"></span><br><span class="line">c &#x3D; complex(x)</span><br></pre></td></tr></table></figure>
+
+<p><strong>无法将复数转换为其他数字类型</strong></p>
+<p><strong>随机数</strong></p>
+<p>导入 random 模块，并显示 1 到 9 之间的随机数：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import random</span><br><span class="line"></span><br><span class="line">print(random.randrange(1,10))</span><br></pre></td></tr></table></figure>
       
     </div>
 
