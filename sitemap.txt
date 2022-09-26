@@ -1,3 +1,4 @@
+http://example.com/tages/index.html
 http://example.com/2022/09/25/hello-world/
 http://example.com/2022/09/25/article-title/
 http://example.com/about/index.html
