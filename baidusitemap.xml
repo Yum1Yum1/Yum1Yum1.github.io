@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://example.com//post/JAVA.html</loc>
-    <lastmod>2022-11-21</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com//post/PHP%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.html</loc>
-    <lastmod>2022-11-14</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com//post/PHP%E7%89%B9%E6%80%A7.html</loc>
-    <lastmod>2022-10-26</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com//post/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE.html</loc>
-    <lastmod>2022-10-07</lastmod>
-  </url>
-  <url>
-    <loc>http://example.com//post/PHP%20TIPS.html</loc>
-    <lastmod>2022-10-07</lastmod>
-  </url>
-  <url>
     <loc>http://example.com//post/CTFShow.html</loc>
-    <lastmod>2022-09-28</lastmod>
+    <lastmod>2022-11-25</lastmod>
   </url>
   <url>
     <loc>http://example.com//post/Upload-Labs.html</loc>
-    <lastmod>2022-09-28</lastmod>
+    <lastmod>2022-11-25</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com//post/PHP%E7%89%B9%E6%80%A7.html</loc>
+    <lastmod>2022-11-25</lastmod>
   </url>
   <url>
     <loc>http://example.com//post/SQLI-LABS.html</loc>
-    <lastmod>2022-09-28</lastmod>
+    <lastmod>2022-11-25</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com//post/PHP%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96.html</loc>
+    <lastmod>2022-11-25</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com//post/PHP%E4%BC%AA%E5%8D%8F%E8%AE%AE.html</loc>
+    <lastmod>2022-11-25</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com//post/JAVA.html</loc>
+    <lastmod>2022-11-25</lastmod>
+  </url>
+  <url>
+    <loc>http://example.com//post/PHP%20TIPS.html</loc>
+    <lastmod>2022-11-25</lastmod>
   </url>
 </urlset> 
